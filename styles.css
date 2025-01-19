@@ -5,6 +5,7 @@ body {
   padding: 0;
   background: #f4f4f4;
   color: #333;
+  overflow-x: hidden;
 }
 
 /* Header Tasarımı */
@@ -90,3 +91,88 @@ footer {
   padding: 1.5rem 1rem;
 }
 
+footer .quick-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .quick-links a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------ */
+/* MOBİL UYUMLULUK (MEDIA QUERIES) */
+/* ------------------------ */
+@media (max-width: 768px) {
+  header {
+    padding: 3rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .chart-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .timeline {
+    padding-left: 10px;
+  }
+
+  .timeline-item {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 1rem 0.5rem;
+  }
+
+  footer .quick-links a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .chart-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .timeline {
+    padding-left: 5px;
+  }
+
+  .timeline-item {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  footer .quick-links a {
+    font-size: 0.8rem;
+  }
+}
