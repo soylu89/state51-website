@@ -7,125 +7,85 @@ body {
   background: #f9f9f9;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* HERO SECTION WITH VIDEO */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* HERO SECTION */
-.hero-section {
-  height: 100vh;
-  background: linear-gradient(135deg, #ff0000, #ffffff);
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .hero-content h1 {
   font-size: 4rem;
-  margin: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #333;
+  padding: 1rem 2rem;
+  background: #ff0000;
   color: white;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
 }
 
-.hero-btn:hover {
-  background-color: #555;
+/* CAROUSEL SECTION */
+.carousel-section {
+  margin: 3rem 0;
 }
 
-/* ABOUT SECTION */
-.about-section {
-  padding: 4rem 0;
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* DİĞER BÖLÜMLER (ABOUT, TOKENOMICS, BUY) */
+.about-section, .tokenomics-section, .buy-section {
   text-align: center;
-}
-
-.about-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-/* TOKENOMICS SECTION */
-.tokenomics-section {
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.chart-container {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto 2rem;
-}
-
-.tokenomics-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: left;
-}
-
-.tokenomics-list li {
-  margin: 0.5rem 0;
-}
-
-/* BUY SECTION */
-.buy-section {
-  padding: 4rem 0;
-  background: #333;
-  color: white;
-  text-align: center;
-}
-
-.buy-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.buy-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #ff4500;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.buy-btn:hover {
-  background-color: #ff5733;
+  padding: 4rem 1rem;
 }
 
 /* FOOTER */
 footer {
   background: #222;
   color: white;
-  text-align: center;
   padding: 2rem 0;
+  text-align: center;
 }
 
 footer .social-links a {
-  color: white;
   margin: 0 10px;
+  color: white;
   text-decoration: none;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline;
 }
