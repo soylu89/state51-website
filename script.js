@@ -16,7 +16,7 @@ async function fetchTokenPrice() {
 
 fetchTokenPrice();
 
-// Tokenomics grafiği
+// Tokenomics grafiği - Boyut düzenlemesi etkili olacak
 const ctx = document.getElementById('tokenomics-chart').getContext('2d');
 new Chart(ctx, {
   type: 'pie',
@@ -26,5 +26,9 @@ new Chart(ctx, {
       data: [20, 10, 10, 60],
       backgroundColor: ['#ff0000', '#00ff00', '#0000ff', '#f4f4f4'],
     }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false, // Grafik boyutunun daha iyi kontrol edilmesi
   }
 });
