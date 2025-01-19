@@ -1,178 +1,75 @@
-/* Genel Ayarlar */
+/* GENEL STİLLER */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
   color: #333;
-  overflow-x: hidden;
 }
 
-/* Header Tasarımı */
-header {
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  color: #ff0000;
+}
+
+/* HERO BÖLÜMÜ */
+.hero {
   background: linear-gradient(135deg, #ff0000, #ffffff);
   color: white;
   text-align: center;
-  padding: 4rem 1rem;
-  position: relative;
+  padding: 5rem 1rem;
 }
 
-header .logo {
-  max-width: 150px;
-  margin-bottom: 1rem;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+.hero h1 {
+  font-size: 3rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-header p {
+.hero p {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.animated-btn {
-  animation: pulse 2s infinite;
+.primary-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  background: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+.primary-btn:hover {
+  background: #555;
 }
 
-/* Bölümler Arası Dalgalı Geçiş */
-.wave-divider {
-  height: 50px;
-  background: url('https://svgshare.com/i/o3X.svg') no-repeat center;
-  background-size: cover;
-  margin-top: -30px;
+/* BÖLÜM STİLLERİ */
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
 }
 
-/* Tokenomics Grafik Ayarları */
 .chart-container {
   width: 300px;
   height: 300px;
   margin: 0 auto;
 }
 
-#tokenomics-chart {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Zaman Çizelgesi */
-.timeline {
-  border-left: 2px solid #ff0000;
-  padding-left: 20px;
-}
-
-.timeline-item {
-  margin: 10px 0;
-  padding: 10px;
-  background: #f4f4f4;
-  border-radius: 5px;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
   background: #222;
   color: white;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 1.5rem 1rem;
 }
 
-footer .quick-links a {
+footer .social-links a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
 }
 
-footer .quick-links a:hover {
+footer .social-links a:hover {
   text-decoration: underline;
-}
-
-/* ------------------------ */
-/* MOBİL UYUMLULUK (MEDIA QUERIES) */
-/* ------------------------ */
-@media (max-width: 768px) {
-  header {
-    padding: 3rem 1rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .chart-container {
-    width: 200px;
-    height: 200px;
-  }
-
-  .timeline {
-    padding-left: 10px;
-  }
-
-  .timeline-item {
-    padding: 8px;
-    font-size: 0.9rem;
-  }
-
-  .btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  footer {
-    padding: 1rem 0.5rem;
-  }
-
-  footer .quick-links a {
-    margin: 0 5px;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  header p {
-    font-size: 0.9rem;
-  }
-
-  .chart-container {
-    width: 150px;
-    height: 150px;
-  }
-
-  .timeline {
-    padding-left: 5px;
-  }
-
-  .timeline-item {
-    font-size: 0.8rem;
-  }
-
-  .btn {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  footer .quick-links a {
-    font-size: 0.8rem;
-  }
 }
