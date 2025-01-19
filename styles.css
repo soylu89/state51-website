@@ -1,67 +1,123 @@
-/* GENEL STİLLER */
+/* GENEL TASARIM */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
   color: #333;
+  background: #f9f9f9;
 }
 
-h1, h2 {
-  font-family: 'Arial', sans-serif;
-  color: #ff0000;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* HERO BÖLÜMÜ */
-.hero {
+/* HERO SECTION */
+.hero-section {
+  height: 100vh;
   background: linear-gradient(135deg, #ff0000, #ffffff);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5rem 1rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0.5rem 0;
 }
 
-.hero p {
-  font-size: 1.2rem;
+.hero-content p {
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.primary-btn {
+.hero-btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
+  background-color: #333;
   color: white;
-  background: #333;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
-.primary-btn:hover {
-  background: #555;
+.hero-btn:hover {
+  background-color: #555;
 }
 
-/* BÖLÜM STİLLERİ */
-.section {
-  padding: 3rem 1rem;
+/* ABOUT SECTION */
+.about-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* TOKENOMICS SECTION */
+.tokenomics-section {
+  padding: 4rem 0;
   text-align: center;
 }
 
 .chart-container {
   width: 300px;
   height: 300px;
+  margin: 0 auto 2rem;
+}
+
+.tokenomics-list {
+  list-style: none;
+  padding: 0;
   margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.tokenomics-list li {
+  margin: 0.5rem 0;
+}
+
+/* BUY SECTION */
+.buy-section {
+  padding: 4rem 0;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+.buy-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff4500;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #ff5733;
 }
 
 /* FOOTER */
 footer {
   background: #222;
   color: white;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 0;
 }
 
 footer .social-links a {
