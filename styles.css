@@ -1,75 +1,91 @@
-/* GENEL STİLLER */
+/* GENEL TASARIM */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
   color: #333;
+  background: #f9f9f9;
 }
 
-h1, h2 {
-  font-family: 'Arial', sans-serif;
-  color: #ff0000;
+/* HERO SECTION WITH VIDEO */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* HERO BÖLÜMÜ */
-.hero {
-  background: linear-gradient(135deg, #ff0000, #ffffff);
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
   color: white;
   text-align: center;
-  padding: 5rem 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.primary-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
+.hero-btn {
+  padding: 1rem 2rem;
+  background: #ff0000;
   color: white;
-  background: #333;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
 }
 
-.primary-btn:hover {
-  background: #555;
+/* CAROUSEL SECTION */
+.carousel-section {
+  margin: 3rem 0;
 }
 
-/* BÖLÜM STİLLERİ */
-.section {
-  padding: 3rem 1rem;
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* DİĞER BÖLÜMLER (ABOUT, TOKENOMICS, BUY) */
+.about-section, .tokenomics-section, .buy-section {
   text-align: center;
-}
-
-.chart-container {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
+  padding: 4rem 1rem;
 }
 
 /* FOOTER */
 footer {
   background: #222;
   color: white;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 0;
 }
 
 footer .social-links a {
-  color: white;
   margin: 0 10px;
+  color: white;
   text-decoration: none;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline;
 }
