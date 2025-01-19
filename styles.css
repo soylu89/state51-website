@@ -27,6 +27,15 @@ header .logo {
   margin-bottom: 1rem;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
 .btn {
   display: inline-block;
   margin: 1rem;
@@ -35,10 +44,12 @@ header .logo {
   background: #333;
   text-decoration: none;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
   background: #555;
+  transform: scale(1.1);
 }
 
 footer {
