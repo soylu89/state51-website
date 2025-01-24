@@ -1,0 +1,19 @@
+
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Coin Circle -->
+  <circle cx="100" cy="100" r="90" fill="#e31837"/>
+  <circle cx="100" cy="100" r="85" fill="#fff"/>
+  <circle cx="100" cy="100" r="80" fill="#e31837"/>
+  
+  <!-- Maple Leaf -->
+  <path d="M100 150 L115 110 L108 110 L123 90 L115 93 L130 70 L108 85 L112 60 L100 75 L88 60 L92 85 L70 70 L85 93 L77 90 L92 110 L85 110 Z" fill="#fff"/>
+  
+  <!-- Number 51 -->
+  <text x="92" y="95" font-family="Arial" font-size="24" fill="#fff" font-weight="bold">51</text>
+  
+  <!-- Circular Text -->
+  <path id="circlePath" d="M100,30 A70,70 0 1,1 99.9,30" fill="none"/>
+  <text fill="#fff" font-size="14" font-family="Arial" font-weight="bold">
+    <textPath href="#circlePath" startOffset="5%">WHY NOT? EH, 51ST STATE SOUNDS GOOD!</textPath>
+  </text>
+</svg>
